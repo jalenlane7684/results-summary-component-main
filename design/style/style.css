@@ -49,23 +49,25 @@ body {
     width: 50%;
 }
 
+.result-header {
+    font-size: 1.25rem;
+    color: hsl(241, 100%, 89%);
+    margin: 0;
+}
+
 .result {
     background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
     border-radius: 50%;
     margin: 5%;
     padding: 10px;
+    width: 150px;
     aspect-ratio: 1 / 1;
-    width: 75%;
-    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.result-header {
-    font-size: 1.25rem;
-    color: hsl(241, 100%, 89%);
-}
+
 
 .res-num {
     font-size: 4rem;
@@ -78,7 +80,7 @@ body {
 
 .out-of {
     font-size: 1rem;
-    color: hsla(0, 0%, 100%, .35);
+    color: hwb(0 100% 0% / 0.35);
 }
 
 .great {
@@ -135,6 +137,7 @@ body {
     justify-content: right;
     padding: 25px;
     color: hsla(224, 30%, 27%, .5);
+    font-weight: 700;
 }
 
 .s-out-of {
@@ -160,6 +163,14 @@ body {
     color: hsl(234, 85%, 45%);
     background-color: hsla(234, 85%, 45%, .1);
 }
+
+.bold {
+    display: inline-block;
+    white-space: normal;
+    font-weight: 800;
+    margin-right: .25em;
+}
+
 
 .continue-button {
     margin-top: 30px;
@@ -205,6 +216,10 @@ footer {
     .result {
         width: 150px;
         aspect-ratio: 1 / 1;
+    }
+
+    .res-explaination {
+        padding: 10px 0 10px 0;
     }
 
     .result-header {
